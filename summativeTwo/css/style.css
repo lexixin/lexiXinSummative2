@@ -1,4 +1,31 @@
+@font-face{
+    font-family: Consistance;
+    src:url(../fonts/Consistance.eot);
+}
+
+@font-face{
+    font-family: Consistance;
+    src:url(../fonts/Consistance.ttf);
+}
+
 *{
     box-sizing: border-box;
 }
+
+h1{
+    font-family: Consistance;
+    font-size: 50px;
+}
+
+h2{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
 
