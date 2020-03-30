@@ -1,31 +1,64 @@
-@font-face{
+@font-face {
     font-family: Consistance;
-    src:url(../fonts/Consistance.eot);
+    src: url(../fonts/Consistance.eot);
 }
 
-@font-face{
+@font-face {
     font-family: Consistance;
-    src:url(../fonts/Consistance.ttf);
+    src: url(../fonts/Consistance.ttf);
 }
 
-*{
+/*layout*/
+* {
     box-sizing: border-box;
 }
 
-h1{
+html {
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/homepage_headimage.png);
+    background-size: cover;
+}
+
+header {
+    
+}
+
+nav {
+    
+}
+
+footer{
+    background-image: url(../images/footer_image.png);
+    background-size: cover;
+}
+/*typography*/
+h1 {
     font-family: Consistance;
     font-size: 50px;
 }
 
-h2{
+h2 {
     font-family: 'Major Mono Display', monospace;
-    font-size: 40px;
+    font-size: 24px;
 }
 
-p{
+h3{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 18px;
+}
+
+h6{
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 8px;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 
-
+/*media queries*/
+@media screen and (min-width:360px) {}
