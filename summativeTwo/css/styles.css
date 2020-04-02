@@ -1,5 +1,6 @@
     /*-----GENERAL-----*/
 
+
 * {
     box-sizing: border-box;
 }
@@ -30,7 +31,12 @@ img {
     height: 100%;
 }
 
+
+
+
+    
     /*-----TYPOGRAPHY-----*/
+
 
 font-family: 'Major Mono Display', monospace;
 font-family: 'Roboto', sans-serif;
@@ -81,8 +87,8 @@ p a {
 
 
 
-
     /*-----NAVIGATION-----*/
+
 
 header {
     background-color: transparent;
@@ -93,7 +99,7 @@ nav {
 /*    position: fixed;*/
     font-family: 'Major Mono Display', monospace;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     margin-bottom: 10px;
@@ -114,19 +120,61 @@ nav {
     text-decoration: none;
 }
 
-li {
+#links li {
     font-size: 0.6rem;
     list-style: none;
     margin: 20px;
     color: black;
 }
 
-li:last-child {
+#links li:last-child {
     margin-right: 10px;
+}
+
+#navButton {
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 
 
+/*-----MOBILE MENU-----*/
+
+
+
+#menu {
+    display: none;
+    font-family: 'Major Mono Display', monospace;
+    height: 640px;
+    width: 100%;
+    background-color: #daa857;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+}
+
+#menu a{
+    text-decoration: none; 
+}
+
+#menu li{
+    color: black;
+    font-size: 1.125rem;
+    list-style: none;
+    margin-top: 32px;
+
+}
+
+.displayMenu {
+    display: block !important;
+}
+
+.fas fa-times{
+    display: block !important;
+}
 
     /*-----MAIN-----*/
 
@@ -183,7 +231,12 @@ button:hover{
     padding: 16px;
 }
 
+
+
+
+
     /*---EXHIBITION PAGE---*/
+
 
 #exhibitionInfo{
     padding: 16px;
@@ -212,7 +265,10 @@ button:hover{
 
 
 
+
+
     /*-----FOOTER-----*/
+
 
 #footerSection {
     height: 530px;
@@ -246,7 +302,14 @@ button:hover{
 }
 
 #contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 40px;
+}
+
+#contact, #social{
+    width: 140px;
 }
 
 .signup{
@@ -255,7 +318,11 @@ button:hover{
 
 
 
+
+
+
     /*-----MEDIA QUERIES-----*/
+
 
 @media screen and (min-width:640px) {
 
@@ -263,9 +330,12 @@ button:hover{
         font-size: 125%;
     }
 
+    
+    
 
-    /* NAVIGATION */
+    /*-----NAVIGATION-----*/
 
+    
     nav {
         max-width: 960px;
         margin: 0 auto;
@@ -276,9 +346,14 @@ button:hover{
         display: flex;
     }
 
+    #navButton {
+        display: none;
+    }
+    
 
     /* -----MAIN----- */
 
+    
     main{
         max-width: 960px;
         margin: 0 auto;
@@ -320,7 +395,9 @@ button:hover{
     }
     
     
-/*-----FOOTER-----*/
+
+    /*-----FOOTER-----*/
+    
     
     #footerSection{
         justify-content: center;
@@ -333,10 +410,12 @@ button:hover{
     #contactInfo{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 120px;
+        grid-gap: 20px;
+        height: 200px;
     }
     
     #contact{
+        padding-top: 43px;
         grid-column: 1/2;
     }
     
