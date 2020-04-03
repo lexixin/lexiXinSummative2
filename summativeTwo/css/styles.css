@@ -138,6 +138,8 @@
     }
 
     #navButton {
+        width: 17.5px;
+        height: 20px;
         color: black;
         font-size: 20px;
         margin-right: 10px;
