@@ -12,36 +12,37 @@
 </head>
 
 <body>
-  
-<!--  MOBILE MENU-->
-  
-   <div id="menu">
+
+    <!--  MOBILE MENU-->
+
+    <div id="menu">
         <ul>
             <a href="exhibition.html">
-            <li>exhibition</li>
+                <li>exhibition</li>
             </a>
             <a href="artisit.html">
-            <li>artist</li>
+                <li>artist</li>
             </a>
             <a href="workshop.html">
-            <li>workshop</li>
+                <li>workshop</li>
             </a>
             <a href="gallery.html">
-            <li>gallery</li>
+                <li>gallery</li>
             </a>
             <a href="contact.html">
-            <li>contact</li>
+                <li>contact</li>
             </a>
         </ul>
     </div>
+
     
-    <i id="navButton" class="fas fa-bars" onclick="toggleMenu"></i>
-    
-<!--    MOBILE MENU-->
-    
+
+    <!--  END OF MOBILE MENU-->
+
     <header>
         <nav>
             <a href="index.html"><img id="logo" src="images/logo.svg" alt="Logo"></a>
+            
             <ul id="links">
                 <a href="exhibition.html">
                     <li>exhibition</li>
@@ -59,18 +60,30 @@
                     <li>contact</li>
                 </a>
             </ul>
+            <i id="navButton" class="fas fa-bars"></i>
         </nav>
     </header>
 
     <main>
 
+        <!--HERO       -->
+
         <section id="headerSection">
             <div id="hero">
+
                 <img src="images/homepage_headimage.png" alt="hero">
+
+            </div>
+            
+            <div id="heroWeb">
+                <img src="images/webHomepageHeadImage1.jpg">
             </div>
 
             <div id="heroText">
-                <h2>ceramic <br>exhibition <br>2020</h2>
+                <h2>ceramic <br>exhibition
+                <br>
+                2020</h2>
+                <br>
                 <a href="exhibition.html"><button>JOIN NOW</button></a>
             </div>
         </section>
@@ -80,9 +93,9 @@
         <section id="otherSections">
 
 
+            <!--EXHIBITION SECTION-->
 
             <div class="card" id="card1">
-                <img src="images/homepage_exhibition.jpg" alt="">
 
                 <div class="cardText">
                     <h2>about</h2>
@@ -92,12 +105,15 @@
                     </p>
                 </div>
 
+                <img src="images/homepage_exhibition.jpg" alt="">
+
             </div>
 
 
+            <!--ARTIST SECTION-->
 
             <div class="card" id="card2">
-                <img src="images/artistpage_tracey.jpg" alt="tracey">
+
 
                 <div class="cardText">
                     <h2>artist</h2>
@@ -106,12 +122,31 @@
                     </p>
                 </div>
 
+                <div id="artistSection">
+                   
+                    <article id="tracey">
+                        <img src="images/artistpage_tracey.jpg" alt="tracey">
+                    </article>
+                    
+                    <article id="emma">
+                        <img src="images/artistpage_emma.jpg" alt="tracey">
+                    </article>
+                    
+                    <article id="lauren">
+                        <img src="images/artistpage_lauren.jpg" alt="tracey">
+                    </article>
+                    
+                    <article id="rachel">
+                        <img src="images/artistpage_rachel.jpg" alt="tracey">
+                    </article>
+                    
+                </div>
+
             </div>
 
-
+            <!--WORKSHOP SECTION-->
 
             <div class="card" id="card3">
-                <img src="images/homepage_workshop2.jpg" alt="">
 
                 <div class="cardText">
                     <h2>workshop</h2>
@@ -120,12 +155,21 @@
                     </p>
                 </div>
 
+                <div id="workshop">
+                    <img src="images/homepage_workshop2.jpg" alt="">
+                </div>
+                
+                <div id="workshopWeb">
+                    <img src="images/homepage_workshop.jpg" alt="">
+                </div>
+
             </div>
 
 
+            <!--GALLERY SECTION-->
 
             <div class="card" id="card4">
-                <img src="images/gallerypage_image2.jpg" alt="">
+
 
                 <div class="cardText">
                     <h2>gallery</h2>
@@ -135,58 +179,81 @@
                     </p>
                 </div>
 
+                <div id="gallerySection">
+                   
+                    <article id="image1">
+                        <img src="images/gallerypage_image2.jpg" alt="">
+                    </article>
+                    
+                    <article id="image2">
+                        <img src="images/gallerypage_image1.jpg" alt="">
+                    </article>
+                    
+                    <article id="image3">
+                        <img src="images/gallerypage_image3.jpg" alt="">
+                    </article>
+                    
+                    <article id="image4">
+                        <img src="images/gallerypage_image4.jpg" alt="">
+                    </article>
+                    
+                    
+                </div>
+
             </div>
-            
+
         </section>
 
     </main>
 
-<footer>
+    <!--FOOTER-->
+
+    <footer>
         <section id="footerSection">
-           
+
             <div id="footerImage">
                 <img src="images/footer_image.png" alt="footer image">
             </div>
             
+            <div id="footerImageWeb">
+                <img src="images/webFooterImage1.jpg" alt="">
+            </div>
+
             <div id="footerText">
-               
+
                 <h3>stay in the circle</h3>
                 <article id="signupBox">
                     email...
                 </article>
-                
+
                 <article id="signupButton">
                     <button>SUBSCRIBE</button>
                 </article>
             </div>
-            
+
             <div id="contactInfo">
-               
+
                 <article id="contact">
                     <h3>contact</h3>
                     <p>
                         09 210 376 <br><br>info@incircles.com <br><br>74 Albert Street, <br>Auckland CBD, <br>New Zealand
                     </p>
                 </article>
-            
+
                 <article id="social">
                     <h3>social</h3>
                     <p>
                         Instagram <br><br> Facebook <br><br> Twitter
                     </p>
                 </article>
-                
+
             </div>
-            
-          
-          
-<!--         &copy; In circles 2020. -->
+
+
+            <!--         &copy; In circles 2020. -->
         </section>
-        
 
-        
     </footer>
- <script src="js/main.js"></script>   
-</body>
+    <script src="js/main.js"></script>
 
-</html>
+</body></html>
