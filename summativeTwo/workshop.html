@@ -63,10 +63,18 @@
     
     <main>
        <section id="headimage">
-            <img src="images/homepage_headimage.png" alt="head image">
+            <div id="hero">
 
-            <div id="headh2">
-                <h2>meet <br> the <br> artists</h2>
+                <img src="images/homepage_headimage.png" alt="hero">
+
+            </div>
+            
+            <div id="heroWeb">
+                <img src="images/webHomepageHeadImage1.jpg">
+            </div>
+
+            <div id="heroText">
+                <h2>mworkshop</h2>
             </div>
         </section>
 
@@ -116,46 +124,65 @@
     
     <footer>
         <section id="footerSection">
-           
+
+<!--
             <div id="footerImage">
                 <img src="images/footer_image.png" alt="footer image">
             </div>
+-->
             
+<!--
+            <div id="footerImageWeb">
+                <img src="images/webFooterImage1.jpg" alt="">
+            </div>
+-->
+            
+
+<!--
             <div id="footerText">
-               
+
                 <h3>stay in the circle</h3>
                 <article id="signupBox">
                     email...
                 </article>
-                
+
                 <article id="signupButton">
                     <button>SUBSCRIBE</button>
                 </article>
             </div>
+-->
+            <h3 id="footerH3">stay in the circle</h3>
             
-            <div id="contactInfo">
+            <form action="/action_page.php" id="footerForm">
                
+                
+                <input type="text" id="email" name="email" placeholder="email...">
+                
+                <input type="submit" id="subscribe" name="subscribe" value="SUBSCRIBE">
+            </form>
+
+            <div id="contactInfo">
+
                 <article id="contact">
                     <h3>contact</h3>
                     <p>
                         09 210 376 <br><br>info@incircles.com <br><br>74 Albert Street, <br>Auckland CBD, <br>New Zealand
                     </p>
                 </article>
-            
+
                 <article id="social">
                     <h3>social</h3>
                     <p>
                         Instagram <br><br> Facebook <br><br> Twitter
                     </p>
                 </article>
-                
+
             </div>
-            
-          
-          &copy; In circles 2020.
-          
+
+
+                     <p id="copyRight">&copy; In circles 2020.</p> 
         </section>
-        
+
     </footer>
     <script src="js/main.js"></script>
     </body>

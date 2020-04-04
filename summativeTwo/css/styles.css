@@ -126,12 +126,25 @@
         text-decoration: none;
     }
 
+
+    /*--WHY HOVER DOESN'T WORK ?---*/
+
+
+    #links a: hover {
+        background-color: #daa857;
+    }
+
+    /*--WHY HOVER DOESN'T WORK ?---*/
+
+
     #links li {
         font-size: 0.6rem;
         list-style: none;
         margin: 20px;
         color: black;
     }
+
+
 
     #links li:last-child {
         margin-right: 10px;
@@ -251,6 +264,8 @@ section {
     }
 
 
+
+
     /*-------ARTIST section-------*/
 
     #emma,
@@ -260,15 +275,13 @@ section {
     }
 
 
-/*------WORKSHOP section-----*/
+    /*------WORKSHOP section-----*/
 
-#workshop{
-    
-}
+    #workshop {}
 
-#workshopWeb{
-    display: none;
-}
+    #workshopWeb {
+        display: none;
+    }
 
 
     /*----GALLERY section----*/
@@ -307,19 +320,86 @@ section {
         grid-column: 3/4;
     }
 
+    .cardTextExhibition {
+        text-align: center;
+        padding: 16px;
+    }
 
 
+    /*-----ARTIST PAGE-----*/
+
+    #artistGrid {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+
+    .cardTextArtist {
+        text-align: center;
+        padding: 16px;
+    }
+
+    /*-----WORKSHOP PAGE-----*/
+
+
+
+    /*-----GALLERY PAGE-----*/
+
+    #galleryGrid {
+        margin-top: 160px;
+        margin-bottom: 120px;
+    }
+
+    .cardTextGallery {
+        text-align: end;
+        margin-top: -12px;
+        padding-right: 0;
+    }
+
+    #galleryImage5,
+    #galleryImage6,
+    #galleryImage7,
+    #galleryImage8,
+    #galleryImage9,
+    #galleryImage10,
+    #galleryImage11,
+    #galleryImage12,
+    #galleryImage13,
+    #galleryImage14,
+    #galleryImage15,
+    #galleryImage16 {
+        display: none;
+    }
+
+
+
+
+    /*----CONTACT PAGE-----*/
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup {
+        border-bottom: 2px solid #c87962;
+    }
 
 
     /*-----FOOTER-----*/
 
 
     #footerSection {
+        background-image: url(../images/footer_image2.png);
+        background-size: cover;
+        width: 100%;
         height: 530px;
         margin: 0;
         justify-content: center;
+        /*        padding-top: 200px;*/
     }
 
+    /*
     #footerImage {
         height: 530px;
     }
@@ -327,15 +407,54 @@ section {
     #footerImageWeb {
         display: none;
     }
+*/
 
+    /*
     #footerText {
-        margin-top: -500px;
-        padding-left: 40px;
-        justify-content: center;
+        margin-top: -500px;   
+        
+        padding: 0 auto;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
+*/
+
+    #footerH3 {
+        text-align: center;
     }
 
+    #footerForm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #email {
+        border: 2px solid black;
+        width: 160px;
+        height: 30px;
+    }
+
+    #subscribe {
+        height: 30px;
+        border: none;
+        background-color: #c87962;
+        width: 80px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: #f1e6d6;
+        cursor: pointer;
+    }
+
+    #subscribe:hover {
+        background-color: #f1e6d6;
+        color: #c87962;
+    }
+
+    /*
     #signupBox {
         height: 30px;
         border: 2px solid black;
@@ -348,10 +467,12 @@ section {
     #signupButton {
         grid: 2/3;
     }
+*/
 
     #contactInfo {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         padding-left: 40px;
     }
@@ -361,8 +482,9 @@ section {
         width: 140px;
     }
 
-    .signup {
-        border-bottom: 2px solid #c87962;
+    #copyRight {
+        text-align: center;
+        margin-top: 100px;
     }
 
 
@@ -483,43 +605,43 @@ section {
             grid-column: 4/5;
             display: block;
         }
-        
+
         /*-----WHORSHOP section-----*/
-        
-        #workshop{
+
+        #workshop {
             display: none;
         }
-        
-        #workshopWeb{
+
+        #workshopWeb {
             display: block;
             height: 900px;
             max-width: 1920px;
         }
-        
-        
+
+
         /*-----GALLERY section-----*/
-        
-        #gallerySection{
+
+        #gallerySection {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 32px;
         }
-        
-        #image1{
+
+        #image1 {
             grid-column: 1/2;
         }
-        
-        #image2{
+
+        #image2 {
             grid-column: 2/3;
             display: block;
         }
-        
-        #image3{
+
+        #image3 {
             grid-column: 3/4;
             display: block;
         }
-        
-        #image4{
+
+        #image4 {
             grid-column: 4/5;
             display: block;
         }
@@ -561,18 +683,161 @@ section {
 */
 
 
+        /*-----EXHIBITION PAGE-----*/
+
+
+        #exhibitionInfo {
+            max-width: 960px;
+            padding-bottom: 100px;
+        }
+
+        .cardTextExhibition {
+            text-align: center;
+            padding: 16px auto;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /*-----ARTIST PAGE-----*/
+
+        #artistGrid {
+            max-width: 960px;
+            margin-top: 400px;
+            margin-bottom: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 32px;
+        }
+
+        #artistLauren {
+            grid-column: 1/2;
+        }
+
+        #artistTracey {
+            grid-column: 2/3;
+        }
+
+        #artistRachel {
+            grid-column: 1/2;
+        }
+
+        #artistEmma {
+            grid-column: 2/3;
+        }
+
+
+        /*-----WORKSHOP PAGE-----*/
+
+
+
+        /*-----GALLERY PAGE-----*/
+
+
+        #galleryGrid {
+            max-width: 960px;
+            margin-top: 400px;
+            margin-bottom: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 32px;
+        }
+
+        #galleryImage1 {
+            grid-column: 1/2;
+        }
+
+        #galleryImage2 {
+            grid-column: 2/3;
+        }
+
+        #galleryImage3 {
+            grid-column: 3/4;
+        }
+
+        #galleryImage4 {
+            grid-column: 4/5;
+        }
+
+        #galleryImage5 {
+            display: block;
+            grid-column: 1/2;
+        }
+
+        #galleryImage6 {
+            display: block;
+            grid-column: 2/3;
+        }
+
+        #galleryImage7 {
+            display: block;
+            grid-column: 3/4;
+        }
+
+        #galleryImage8 {
+            display: block;
+            grid-column: 4/5;
+        }
+
+        #galleryImage9 {
+            display: block;
+            grid-column: 1/2;
+        }
+
+        #galleryImage10 {
+            display: block;
+            grid-column: 2/3;
+        }
+
+        #galleryImage11 {
+            display: block;
+            grid-column: 3/4;
+        }
+
+        #galleryImage12 {
+            display: block;
+            grid-column: 4/5;
+        }
+
+        #galleryImage13 {
+            display: block;
+            grid-column: 1/2;
+        }
+
+        #galleryImage14 {
+            display: block;
+            grid-column: 2/3;
+        }
+
+        #galleryImage15 {
+            display: block;
+            grid-column: 3/4;
+        }
+
+        #galleryImage16 {
+            display: block;
+            grid-column: 4/5;
+        }
+
+
 
         /*-----FOOTER-----*/
 
 
         #footerSection {
-            justify-content: center;
+            background-image: url(../images/webFooterImage1.jpg);
+            background-size: cover;
+            /*            justify-content: center;*/
+
+            height: 1080px;
             max-width: 1920px;
             margin: 0 auto;
-            padding: 0 auto;
+            /*            padding: 0 auto;*/
             background-color: white;
+            padding-top: 200px;
         }
 
+
+        /*
         #footerImage {
             display: none;
         }
@@ -582,12 +847,44 @@ section {
             max-width: 1920px;
             height: 1080px;
         }
+*/
+        #footerForm {
+            padding-bottom: 100px;
+        }
+
+        #email {
+            border: 2px solid black;
+            width: 30vw;
+            height: 30px;
+        }
+
+        #subscribe {
+            width: 15vw;
+        }
+
+
+        #footerText {
+            margin: 0 550px;
+        }
+
 
         #contactInfo {
+            /*
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+*/
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            /*            padding-left: 40px;*/
+            /*
             grid-gap: 20px;
             height: 200px;
+*/
         }
 
         #contact {
@@ -598,12 +895,19 @@ section {
         #social {
             grid-column: 2/3;
         }
+
+        #copyRight {
+            margin-top: 380px;
+            text-align: center;
+        }
     }
+
+
 
     @media screen and (min-width:1440px) {
 
         section {
-            background-color: darkgoldenrod;
+            /*            background-color: darkgoldenrod;*/
         }
 
     }
