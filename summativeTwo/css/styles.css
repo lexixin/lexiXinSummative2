@@ -28,7 +28,6 @@
         display: block;
         object-fit: cover;
         width: 100%;
-        height: 100%;
     }
 
 
@@ -36,12 +35,6 @@
 
 
     /*-----TYPOGRAPHY-----*/
-
-
-    font-family: 'Major Mono Display',
-    monospace;
-    font-family: 'Roboto',
-    sans-serif;
 
 
     h1 {
@@ -55,8 +48,6 @@
         font-size: 1.5rem;
         border-bottom: 2px solid #c87962;
     }
-
-
 
     h3 {
         font-family: 'Major Mono Display', monospace;
@@ -76,6 +67,13 @@
         font-size: 1.125rem;
     }
 
+    h6 {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
     p {
         font-family: 'Roboto', sans-serif;
         color: black;
@@ -87,6 +85,10 @@
         color: #c87962;
         font-weight: 400;
         text-decoration: none;
+    }
+
+    p a:hover {
+        text-decoration: underline;
     }
 
 
@@ -102,7 +104,6 @@
     }
 
     nav {
-        /*    position: fixed;*/
         font-family: 'Major Mono Display', monospace;
         display: flex;
         justify-content: space-between;
@@ -130,8 +131,8 @@
     /*--WHY HOVER DOESN'T WORK ?---*/
 
 
-    #links a: hover {
-        background-color: #daa857;
+    nav #links a: hover {
+        text-decoration: underline;
     }
 
     /*--WHY HOVER DOESN'T WORK ?---*/
@@ -143,8 +144,6 @@
         margin: 20px;
         color: black;
     }
-
-
 
     #links li:last-child {
         margin-right: 10px;
@@ -175,7 +174,10 @@
         width: 100%;
         top: 50px;
         text-align: center;
+    }
 
+    #menu ul {
+        padding-left: 0;
     }
 
 
@@ -200,15 +202,6 @@
         display: block !important;
     }
 
-    /*-----MAIN-----*/
-
-    /*
-section {
-    background-color: chartreuse;
-    margin: 0;
-    padding: 0;
-}
-*/
 
 
     /*-------HERO-------*/
@@ -341,13 +334,25 @@ section {
 
     /*-----WORKSHOP PAGE-----*/
 
+    #workshopGrid {
+        margin-top: 160px;
+        margin-bottom: 120px;
+    }
 
+    .cardTextWorkshop {
+        text-align: center;
+        padding: 16px;
+    }
 
     /*-----GALLERY PAGE-----*/
 
     #galleryGrid {
+        padding: 0 16px;
         margin-top: 160px;
         margin-bottom: 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
     }
 
     .cardTextGallery {
@@ -356,34 +361,193 @@ section {
         padding-right: 0;
     }
 
-    #galleryImage5,
-    #galleryImage6,
-    #galleryImage7,
-    #galleryImage8,
-    #galleryImage9,
-    #galleryImage10,
-    #galleryImage11,
-    #galleryImage12,
-    #galleryImage13,
-    #galleryImage14,
-    #galleryImage15,
-    #galleryImage16 {
-        display: none;
+    #galleryImage1 {
+        grid-column: 1/2;
     }
 
+    #galleryImage2 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage3 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage4 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage5 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage6 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage7 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage8 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage9 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage10 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage11 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage12 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage13 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage14 {
+        grid-column: 2/3;
+    }
+
+    #galleryImage15 {
+        grid-column: 1/2;
+    }
+
+    #galleryImage16 {
+        grid-column: 2/3;
+    }
 
 
 
     /*----CONTACT PAGE-----*/
 
-    form {
-        display: flex;
-        flex-direction: column;
+    #contactGrid {
+        margin-top: 200px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 120px;
     }
 
-    .signup {
-        border-bottom: 2px solid #c87962;
+    #contactDetail {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
+
+    #contactForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+
+    #contactName,
+    #contactEmail,
+    #contactSubject,
+    #contactMessage {
+        border: none;
+        border-bottom: 2px solid #c87962;
+        margin-bottom: 32px;
+        outline: none;
+    }
+
+    #contactSubmit {
+        border: none;
+        height: 30px;
+        width: 80px;
+        background-color: #c87962;
+        color: #f1e6d6;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-top: 64px;
+        margin: 64px auto 0 auto;
+
+    }
+
+    #contactSubmit:hover {
+        background-color: #f1e6d6;
+        color: #c87962;
+    }
+
+
+    /*----BOOKING PAGE-----*/
+
+    #bookingGrid {
+        margin-top: 200px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 120px;
+    }
+
+    #bookingDetail {
+        max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    #bookingForm,
+    #bookingWorkshop,
+    #bookingPayment {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    #bookingName,
+    #bookingEmail,
+    #bookingPhone,
+    #bookingWorkshop,
+    #bookingPrice,
+    #bookingCardNumber,
+    #bookingNameCard,
+    #bookingExpiry,
+    #bookingCVV {
+        border: none;
+        border-bottom: 2px solid #c87962;
+        margin-bottom: 32px;
+        outline: none;
+    }
+
+    #bookingSeclectWorkshop {
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 0;
+
+    }
+
+    #bookingPay {
+        border: none;
+        height: 30px;
+        width: 80px;
+        background-color: #c87962;
+        color: #f1e6d6;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.75rem;
+        margin-top: 64px;
+        margin: 64px auto 0 auto;
+
+    }
+
+    #bookingPay:hover {
+        background-color: #f1e6d6;
+        color: #c87962;
+    }
+
 
 
     /*-----FOOTER-----*/
@@ -396,29 +560,7 @@ section {
         height: 530px;
         margin: 0;
         justify-content: center;
-        /*        padding-top: 200px;*/
     }
-
-    /*
-    #footerImage {
-        height: 530px;
-    }
-
-    #footerImageWeb {
-        display: none;
-    }
-*/
-
-    /*
-    #footerText {
-        margin-top: -500px;   
-        
-        padding: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0;
-    }
-*/
 
     #footerH3 {
         text-align: center;
@@ -429,12 +571,14 @@ section {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
 
     #email {
         border: 2px solid black;
         width: 160px;
         height: 30px;
+        outline: none;
     }
 
     #subscribe {
@@ -454,21 +598,6 @@ section {
         color: #c87962;
     }
 
-    /*
-    #signupBox {
-        height: 30px;
-        border: 2px solid black;
-        grid-column: 1/2;
-        font-size: 0.875rem;
-        padding-top: 5px;
-        padding-left: 5px;
-    }
-
-    #signupButton {
-        grid: 2/3;
-    }
-*/
-
     #contactInfo {
         display: flex;
         flex-direction: column;
@@ -484,7 +613,7 @@ section {
 
     #copyRight {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
 
@@ -614,7 +743,7 @@ section {
 
         #workshopWeb {
             display: block;
-            height: 900px;
+            height: 100%;
             max-width: 1920px;
         }
 
@@ -646,41 +775,6 @@ section {
             display: block;
         }
 
-
-
-        /*
-        otherSections {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 16px;
-        }
-
-        .cardText {
-            margin: 0 100px;
-        }
-
-        .cardText h2 {
-            margin: 0 100px;
-            text-align: center;
-
-        }
-
-        #card1 {
-            grid-column: 1/2;
-        }
-
-        #card2 {
-            grid-column: 2/3;
-        }
-
-        #card3 {
-            grid-column: 1/2;
-        }
-
-        #card4 {
-            grid-column: 2/3;
-        }
-*/
 
 
         /*-----EXHIBITION PAGE-----*/
@@ -728,6 +822,56 @@ section {
 
         /*-----WORKSHOP PAGE-----*/
 
+
+        #workshopGrid {
+            max-width: 960px;
+            margin-top: 500px;
+            margin-bottom: 200px;
+        }
+
+        #workshop1,
+        #workshop2,
+        #workshop3,
+        #workshop4 {
+            margin-bottom: 100px;
+        }
+
+        .cardTextWorkshop {
+            text-align: left;
+            padding-left: 0;
+        }
+
+        #workshop1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+
+        #workshop2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+
+        #workshop3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+
+        #workshop4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0;
+        }
+
+        #workshop1Text,
+        #workshop2Text,
+        #workshop3Text,
+        #workshop4Text {
+            background-color: #f1e6d6;
+            padding: 32px;
+        }
 
 
         /*-----GALLERY PAGE-----*/
@@ -819,6 +963,38 @@ section {
         }
 
 
+        /*-----CONTACT PAGE-----*/
+
+
+        #contactGrid {
+            margin-top: 400px;
+        }
+
+        #contactDetail {
+            margin-bottom: 100px;
+        }
+
+        #contactSubmit {
+            width: 15vw;
+        }
+
+
+        /*-----BOOKING PAGE-----*/
+
+
+        #bookingGrid {
+            margin-top: 400px;
+        }
+
+        #contactDetail {
+            margin-bottom: 100px;
+        }
+
+        #contactSubmit {
+            width: 15vw;
+        }
+
+
 
         /*-----FOOTER-----*/
 
@@ -826,28 +1002,13 @@ section {
         #footerSection {
             background-image: url(../images/webFooterImage1.jpg);
             background-size: cover;
-            /*            justify-content: center;*/
-
             height: 1080px;
             max-width: 1920px;
             margin: 0 auto;
-            /*            padding: 0 auto;*/
             background-color: white;
             padding-top: 200px;
         }
 
-
-        /*
-        #footerImage {
-            display: none;
-        }
-
-        #footerImageWeb {
-            display: block;
-            max-width: 1920px;
-            height: 1080px;
-        }
-*/
         #footerForm {
             padding-bottom: 100px;
         }
@@ -869,22 +1030,12 @@ section {
 
 
         #contactInfo {
-            /*
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin: 0 auto;
-*/
-            max-width: 600px;
+         max-width: 600px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            /*            padding-left: 40px;*/
-            /*
-            grid-gap: 20px;
-            height: 200px;
-*/
         }
 
         #contact {
@@ -897,17 +1048,7 @@ section {
         }
 
         #copyRight {
-            margin-top: 380px;
+            margin-top: 320px;
             text-align: center;
         }
-    }
-
-
-
-    @media screen and (min-width:1440px) {
-
-        section {
-            /*            background-color: darkgoldenrod;*/
-        }
-
     }

@@ -27,8 +27,8 @@
                 <li>workshop</li>
             </a>
             <a href="booking.html">
-                    <li>ticket</li>
-                </a>
+                <li>ticket</li>
+            </a>
             <a href="gallery.html">
                 <li>gallery</li>
             </a>
@@ -85,34 +85,67 @@
             </div>
 
             <div id="heroText">
-                <h2>contact</h2>
+                <h2>book tickets</h2>
             </div>
         </section>
 
 
-        <section id="contactGrid">
-            <div id="contactDetail">
+
+
+        <section id="bookingGrid">
+            <div id="bookingDetail">
                 <p>
-                    For questions, enquiries or just a note to say hi, <br>please get in touch at email below or filling out the form. <br><br>info@incircles.com
+                    Follow the steps to fill out your information. Please not that, due to the limited availability per workshop, only one class can be booked under the same detail. Thank you for your cooperation.
                 </p>
             </div>
 
-            <form action="/action_page.php" id="contactForm">
 
-                <input type="text" id="contactName" name="name" placeholder="name">
+            <form action="/action_page.php" id="bookingForm">
+                <h3>basic details</h3>
+                <input type="text" id="bookingName" name="name" placeholder="name">
 
-                <input type="text" id="contactEmail" name="email" placeholder="email">
+                <input type="text" id="bookingEmail" name="email" placeholder="email">
 
-                <input type="text" id="contactSubject" name="subject" placeholder="subject">
+                <input type="text" id="bookingPhone" name="phone" placeholder="phone">
 
-                <input type="text" id="contactMessage" name="message" placeholder="message...">
 
-                <input type="submit" name="submit" id="contactSubmit" value="SUBMIT">
+
             </form>
 
-        </section>
 
+            <form action="/action_page.php" id="bookingWorkshop">
+
+                <h3>workshop</h3>
+
+                <select name="selectWorkshop" id="bookingSeclectWorkshop">
+
+                    <option value="Wheel Basics">Wheel Basics / $35</option>
+                    <option value="Form and Function on the Wheel">Form and Function on the Wheel / $50</option>
+                    <option value="Throwers ages 7+">Throwers ages 7+ / $30</option>
+                    <option value="For the Advanced">For the Advanced / $60</option>
+
+                </select>
+
+            </form>
+
+
+
+            <form action="action_page.php" id="bookingPayment">
+                <h3>payment</h3>
+                <input type="text" id="bookingCardNumber" name="card number" placeholder="card number">
+
+                <input type="text" id="bookingNameCard" name="name on card" placeholder="name on card">
+
+                <input type="text" id="bookingExpiry" name="expiry date" placeholder="MM/YY">
+
+                <input type="text" id="bookingCVV" name="cvv" placeholder="security code">
+
+                <input type="submit" name="submit" id="bookingPay" value="PAY">
+
+            </form>
+        </section>
     </main>
+
 
 
     <footer>

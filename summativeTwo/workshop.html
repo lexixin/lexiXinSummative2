@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -11,8 +12,8 @@
 </head>
 
 <body>
-   
-   <!--  MOBILE MENU-->
+
+    <!--  MOBILE MENU-->
 
     <div id="menu">
         <ul>
@@ -25,6 +26,9 @@
             <a href="workshop.html">
                 <li>workshop</li>
             </a>
+            <a href="booking.html">
+                    <li>ticket</li>
+                </a>
             <a href="gallery.html">
                 <li>gallery</li>
             </a>
@@ -34,7 +38,7 @@
         </ul>
     </div>
 
-    
+
 
     <!--  END OF MOBILE MENU-->
     <header>
@@ -50,6 +54,9 @@
                 <a href="workshop.html">
                     <li>workshop</li>
                 </a>
+                <a href="booking.html">
+                    <li>ticket</li>
+                </a>
                 <a href="gallery.html">
                     <li>gallery</li>
                 </a>
@@ -60,104 +67,122 @@
             <i id="navButton" class="fas fa-bars"></i>
         </nav>
     </header>
-    
+
     <main>
-       <section id="headimage">
+        <section id="headimage">
             <div id="hero">
 
                 <img src="images/homepage_headimage.png" alt="hero">
 
             </div>
-            
+
             <div id="heroWeb">
                 <img src="images/webHomepageHeadImage1.jpg">
             </div>
 
             <div id="heroText">
-                <h2>mworkshop</h2>
+                <h2>workshop</h2>
             </div>
         </section>
 
-        <section id="otherSections">
-            <article id="sectionAbout">
-               <img src="images/workshop_image2.jpg" alt="image 1">
-                <h4>Class: Wheel Basics</h4>
-                <p>
-                    Tutor: Lauren Steward <br>Level: 0/5 <br>Availability: 25 <br>Cost: $35/person
-                </p>
-                <p>Learn the basic techniques to throw cylinders, cups and bowls in this beginners class. A relaxed and casual class, and the perfect introduction to the pottery industry. By the end of the workshop you will choose 2 favourite items to be bisc fired, and you will learn how to apply glaze to finish your pieces, ready for their final glaze firing. <br><br>Clay and tools are included in the course cost.
-                </p>
-                <a href="gallery.html"><button>BOOK NOW</button></a>
-                
-            </article>
+        <section id="workshopGrid">
 
-            <article id="sectionArtist">
-               <img src="images/workshop_image1.jpg" alt="image 2">
-                <h4>Class: Form and Function on the Wheel</h4>
-                <p>Tutor: Tracey Leoung <br>Level: 2/5 <br>Availability: 15 <br>Cost: $50/person</p>
-                <p>This intermediate throwing class is open to all  who have previously experienced beginner throwing. <br><br>In this class Tracey will teach you how to throw fundamental tableware shapes including large plates, bowls and bottles and will focus on centring larger amounts of clay. The intention of this class is to expand your throwing abilities, technique, knowledge of form and function and to complete a single or double person dinner set.</p>
-                <a href="gallery.html"><button>BOOK NOW</button></a>
-                
-            </article>
+            <!--WORKSHOP 1-->
 
-            <article id="sectionWorkshop">
-               <img src="images/workshop_imahe4.jpg" alt="image 3">
-                <h4>Class: Throwers ages 7+</h4>
-                <p>Tutor: Emma Johansson <br>Level: 0/5 <br>Availability: 15<br>ost: $30/person</p>
-                <p>This class is for our younger potters who have already taken some classes with us. A continuation of your learning, you are encouraged to work on your own projects with Margaret’s guidance. This class is not suitable for beginners. <br><br>Clay and tools are provided, plus 6 items for firing. Any additional items will cost an extra $5 per item.</p>
-                <a href="gallery.html"><button>BOOK NOW</button></a>
-                
-            </article>
+            <div class="card" id="workshop1">
 
-            <article id="sectionGallery">
-               <img src="images/workshop_image3.jpg" alt="image 4">
-                <h4>Class: Form and Function on the Wheel</h4>
-                <p>Tutor: Rachel Peterson <br>Level: 3/5 <br>Availability: 15 <br>Cost: $60/person</p>
-                <p>Potter Rachel Peterson creates functional porcelain domestic ware on the wheel. This is the perfect class for more experienced throwers. <br><br>In this throwing class Rachel will focus on design and will get you started thinking about how your pieces work together and how to make a functional piece also look good.  The skills covered will be those extra bits that give you the ability to demonstrate your individual style eg handles, spouts, lids. The goal of this workshop will be to come away with a set where the cup, bowl and plate are all tied together with their design language. <br><br>Clay and tools are included for this class, however you can  bring your own materials and tools..</p>
-                <a href="gallery.html"><button>BOOK NOW</button></a>
+                <div id="workshop1Image">
+                    <img src="images/workshop_image2.jpg" alt="image 1">
+                </div>
+
+                <div class="cardTextWorkshop" id="workshop1Text">
+                    <h2>wheel basics</h2>
+                    <h6>
+                        Tutor: Lauren Steward <br>Level: 0/5 <br>Availability: 25 <br>Cost: $35/person
+                    </h6>
+                    <p>Learn the basic techniques to throw cylinders, cups and bowls in this beginners class. A relaxed and casual class, and the perfect introduction to the pottery industry. By the end of the workshop you will choose 2 favourite items to be bisc fired, and you will learn how to apply glaze to finish your pieces, ready for their final glaze firing. <br><br>Clay and tools are included in the course cost.
+                    </p>
+                    <br>
+                    <a href="booking.html"><button>BOOK NOW</button></a>
+
+                </div>
+
+            </div>
+
+
+            <!--WORKSHOP 2-->
+
+            <div class="card" id="workshop2">
+
+               <div id="workshop2Image">
+                     <img src="images/workshop_image1.jpg" alt="image 2">
+                </div>
+
+                <div class="cardTextWorkshop" id="workshop2Text">
+
+                    <h2>form and function on the wheel</h2>
+                    <h6>Tutor: Tracey Leoung <br>Level: 2/5 <br>Availability: 15 <br>Cost: $50/person</h6>
+                    <p>This intermediate throwing class is open to all who have previously experienced beginner throwing. <br><br>In this class Tracey will teach you how to throw fundamental tableware shapes including large plates, bowls and bottles and will focus on centring larger amounts of clay. The intention of this class is to expand your throwing abilities, technique, knowledge of form and function and to complete a single or double person dinner set.</p>
+                    <br>
+                    <a href="booking.html"><button>BOOK NOW</button></a>
+
+                </div>
+
+            </div>
+
+            <!--WORKSHOP 3-->
+
+            <div class="card" id="workshop3">
+
+                <div id="workshop3Image">
+                    <img src="images/workshop_imahe4.jpg" alt="image 3">
+                </div>
+
+                <div class="cardTextWorkshop" id="workshop3Text">
+
+                    <h2>throwers ages 7+</h2>
+                    <h6>Tutor: Emma Johansson <br>Level: 0/5 <br>Availability: 15<br>ost: $30/person</h6>
+                    <p>This class is for our younger potters who have already taken some classes with us. A continuation of your learning, you are encouraged to work on your own projects with Margaret’s guidance. This class is not suitable for beginners. <br><br>Clay and tools are provided, plus 6 items for firing. Any additional items will cost an extra $5 per item.</p>
+                    <br>
+                    <a href="booking.html"><button>BOOK NOW</button></a>
+                </div>
+
+            </div>
+
+
+            <!--WORKSHOP 4-->
+
+            <div class="card" id="workshop4">
+
+                <div id="workshop4Image">
+                    <img src="images/workshop_image3.jpg" alt="image 4">
+                </div>
                 
-            </article>
-        </section> 
-        
-        
+                    <div class="cardTextWorkshop" id="workshop4Text">
+
+                    <h2>for the advanced</h2>
+                    <h6>Tutor: Rachel Peterson <br>Level: 3/5 <br>Availability: 15 <br>Cost: $60/person</h6>
+                    <p>Potter Rachel Peterson creates functional porcelain domestic ware on the wheel. This is the perfect class for more experienced throwers. <br><br>In this throwing class Rachel will focus on design and will get you started thinking about how your pieces work together and how to make a functional piece also look good. The skills covered will be those extra bits that give you the ability to demonstrate your individual style eg handles, spouts, lids. The goal of this workshop will be to come away with a set where the cup, bowl and plate are all tied together with their design language. <br><br>Clay and tools are included for this class.</p>
+                    <br>
+                    <a href="booking.html"><button>BOOK NOW</button></a>
+                    
+                </div>
+            </div>
+
+        </section>
+
     </main>
-    
+
     <footer>
         <section id="footerSection">
 
-<!--
-            <div id="footerImage">
-                <img src="images/footer_image.png" alt="footer image">
-            </div>
--->
-            
-<!--
-            <div id="footerImageWeb">
-                <img src="images/webFooterImage1.jpg" alt="">
-            </div>
--->
-            
-
-<!--
-            <div id="footerText">
-
-                <h3>stay in the circle</h3>
-                <article id="signupBox">
-                    email...
-                </article>
-
-                <article id="signupButton">
-                    <button>SUBSCRIBE</button>
-                </article>
-            </div>
--->
             <h3 id="footerH3">stay in the circle</h3>
-            
+
             <form action="/action_page.php" id="footerForm">
-               
-                
+
+
                 <input type="text" id="email" name="email" placeholder="email...">
-                
+
                 <input type="submit" id="subscribe" name="subscribe" value="SUBSCRIBE">
             </form>
 
@@ -179,11 +204,11 @@
 
             </div>
 
-
-                     <p id="copyRight">&copy; In circles 2020.</p> 
+            <p id="copyRight">&copy; In circles 2020.</p>
         </section>
 
     </footer>
     <script src="js/main.js"></script>
-    </body>
+</body>
+
 </html>
